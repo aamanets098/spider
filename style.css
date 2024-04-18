@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    object-fit: cover;
+    perspective: 11px;
+}
+.container{
+    display: flex;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.moon{
+    position: absolute;
+    align-items: flex-start;
+    justify-content: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.spider{
+    position: absolute;
+    height: 180%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.moon{
+    transform: translateZ(-50px) scale(19);
+}
+.spider{
+    transform: translateZ(-40px) scale(2);
+    filter: grayscale(1);
+}
+.text{
+    display: flex;
+    color: rgba(255, 255, 255, 0.727);
+    justify-content: center;
+    align-items: flex-end;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 20px white;
+}
